@@ -1,0 +1,10 @@
+Add user API
+Operation Id:
+addUserAPI
+Description:
+
+Add a new user for Cisco DNA Center System.
+POST/dna/system/api/v1/user
+Request Parameters
+Header
+Content-Typerequiredstring

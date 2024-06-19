@@ -1,12 +1,12 @@
---ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGim - GitHub Tocken
+--ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi - GitHub Tocken
 
 git@github.com:ajithandrewj/DevOps-Git-Practice.git
 
-git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGim@github.com/ajithandrewj/DevOps-Git-Practice.git
+git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/DevOps-Git-Practice.git
 
-git remote set-url origin https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGim@github.com/ajithandrewj/DevOps-Git-Practice.git
+git remote set-url origin https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/DevOps-Git-Practice.git
 
-git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGim@github.com/ajithandrewj/dnacenter-ansible.git
+git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/dnacenter-ansible.git
 
 git remote add madhan https://github.com/madhansansel/dnacenter-ansible.git
 

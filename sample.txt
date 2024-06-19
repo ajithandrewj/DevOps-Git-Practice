@@ -1,19 +1,1 @@
---ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi - GitHub Tocken
 
-git@github.com:ajithandrewj/DevOps-Git-Practice.git
-
-git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/DevOps-Git-Practice.git
-
-git remote set-url origin https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/DevOps-Git-Practice.git
-
-git clone https://ghp_o2EVOO2yET5ley7FHC6OfjiWdMiu6u4X--GGi@github.com/ajithandrewj/dnacenter-ansible.git
-
-git remote add madhan https://github.com/madhansansel/dnacenter-ansible.git
-
-git remote add rafeek https://github.com/md-rafeek/madhan-dnacenter-ansible.git
-
-git remote add upstream https://github.com/cisco-en-programmability/dnacenter-ansible.git
-
-dnac sdk
-create object
-access api through sdk

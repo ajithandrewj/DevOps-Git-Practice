@@ -1,0 +1,58 @@
+import requests
+import json
+import urllib3
+from pprint import pprint
+
+# Disable SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+Base_URL = 'https://sandboxdnac.cisco.com'
+Username = 'devnetuser'
+Password = 'Cisco123!'
+
+# Function to get access token
+def get_token():
+    endpoint = '/dna/system/api/v1/auth/token'
+    url = Base_URL + endpoint
+    headers = {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    }
+    try:
+        response = requests.post(url, auth=(Username, Password), headers=headers, verify=False)
+        json_resp = json.loads(response.text)
+        return json_resp['Token']
+    except requests.exceptions.RequestException as e:
+        print("Error:", e)
+        return None
+
+def get_users(token):
+    endpoint = '/dna/system/api/v1/user'
+    url = Base_URL + endpoint
+    headers = {
+        "Accept": "application/json",
+        "X-Auth-Token": token
+    }
+    try:
+        response = requests.get(url, headers=headers, verify=False)
+        response.raise_for_status()  # Raise error for bad response status
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print("Error:", e)
+        return None
+
+# Get access token
+token = get_token()
+
+# Check if token is received
+if token:
+    pprint(token)
+    print(type(token))
+    # Get users information using the token
+    users_info = get_users(token)
+    if users_info:
+        pprint(users_info)
+    else:
+        print("Failed to retrieve users information.")
+else:
+    print("Failed to retrieve token.")
